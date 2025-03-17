@@ -12,10 +12,7 @@
 
 
 ## **Abstract:**
-
-The purpose of an abstract in a report is to provide a concise summary of the main points,
-findings, and conclusions of the report. It serves as a brief overview that enables readers to
-quickly grasp the essence of the report without having to read the entire document*
+This project aims to develop an amphibious robotic duck that mimics the appearance and behavior of a real duck while freeing of the need for animal care. Designed for outdoor ponds, it offers a lifelike alternative for the presence of a duck without the responsibilities of keeping one. Additionally, the robotic duck can serve as a tool for birdwatching by integrating observation and monitoring capabilities. By combining embedded systems with autonomous movement and environmental adaptability, the project aims to create a functional, self-sustaining robotic companion for outdoor settings.
 
 **Acronyms**
 
@@ -39,46 +36,47 @@ quickly grasp the essence of the report without having to read the entire docume
 
 **Table of content** 
 
-[1. Introduction](#_toc158297307)
+[1. Introduction](#1-introduction)
 
-[2. Business case](#_toc158297308)
+[2. Business case](#2-business-case)
 
-[3. Approach](#_toc158297309)
+[3. Approach](#3-approach)
 
-[3.1 In scope](#_toc158297310)
+[3.1 In scope](#3-approach)
 
-[3.2 Out of scope](#_toc158297311)
+[3.2 Out of scope](#3-approach)
 
-[4. Deliverables](#_toc158297312)
+[4. Deliverables](#4-deliverables)
 
-[5. Quality management](#_toc158297313)
+[5. Quality management](#5-quality-management)
 
-[6. Prerequisite](#_toc158297314)
+[6. Prerequisite](#6-prerequisite)
 
-[7. Success criteria](#_toc158297315)
+[7. Success criteria](#7-success-criteria)
 
-[Appendix](#_toc158297316)
+[Appendix](#appendix)
 
-[A: Work breakdown structure](#_toc158297317)
-
-
+[A: Work breakdown structure]( )
 
 
 
 
 
-# <a name="_toc158297307"></a>1. Introduction
-
-The purpose of a management summary in a project charter is to provide a concise overview
-of the key aspects of the project for stakeholders and decision-makers. It typically includes
-important information such as the project's objectives, scope, deliverables, timeline, budget,
-risks, and stakeholders
 
 
+# 1. Introduction
+The project focuses on designing and building a functional prototype capable of autonomous movement on both water and land. The robotic duck will feature realistic behaviour such as floating, swimming, and quacking while maintaining energy autonomy for outdoor operation. Development efforts will include hardware design, embedded control systems, power and motor management, sensor integration, software implementation, etc. <br>
+Over the course of the semester, the project will progress through research, hardware development, software implementation, and testing phases. The hardware will primarily cover essential materials, including motors, sensors, waterproofing components, and embedded processing units. Key challenges include ensuring waterproofing and durability, achieving lifelike movement and other behaviours, as well as balancing autonomous behaviour with potential user control.
+By addressing these challenges and delivering a reliable, autonomous system, the project aims to create an innovative and practical robotic companion for outdoor environments.
 
 
 
-# <a name="_toc158297308"></a>2. Business case
+
+
+
+
+
+# 2. Business case
 \- The purpose of a business case description is to provide an overview of the justification for
 the project from a business perspective.
 – ...need or opportunity, the expected benefits and outcomes.
@@ -87,7 +85,7 @@ undertaken, what problem or opportunity it aims to address,
 – ...how it aligns with the organization's strategic objectives
 
 
-# <a name="_toc158297309"></a>3. Approach
+# 3. Approach
 – The purpose of an approach chapter in a business case is to outline the methodology or
 approach that will be used to execute the project
 – ...methodologies such as Waterfall, Scrum or a hybrid approach
@@ -107,7 +105,7 @@ the critical objectives of the project
 
 
 
-# <a name="_toc158297312"></a>4. Deliverables 
+# 4. Deliverables 
 • ...is to clearly identify and define the tangible or intangible outcomes that the project
 is expected to produce
 • ...specific products, services, reports, or other results that will be delivered as a result
@@ -118,7 +116,7 @@ is expected to be produced by the project.
 
 
 
-# <a name="_toc158297313"></a>5. Quality management 
+# 5. Quality management 
 ...to outline the approach and processes that will be employed to ensure that the
 project's deliverables meet the required quality standards
 – Quality Objectives (e.g. ISO XXXXX, CE certified)
@@ -128,7 +126,7 @@ project's deliverables meet the required quality standards
 
 
 
-# <a name="_toc158297314"></a>6. Prerequisite
+# 6. Prerequisite
 to outline any specific requirements or conditions that must be met before the
 project can proceed successfully
 – Hardware Requirements
@@ -140,7 +138,7 @@ project can proceed successfully
 
 
 
-# <a name="_toc158297315"></a>7. Success criteria
+# 7. Success criteria
 define the specific criteria or benchmarks that will be used to determine whether the
 project has been successful
 – Measurable Objectives (objectives or goal)
@@ -148,5 +146,5 @@ project has been successful
 – Key Performance Indicators (KPI) (Lines of codes, code coverage, test
 coverage...)
 
-<a name="_toc158297316"></a>
+<a name="appendix"></a>
 # Appendix 
