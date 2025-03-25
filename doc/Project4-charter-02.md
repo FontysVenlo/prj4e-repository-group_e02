@@ -1,4 +1,4 @@
-﻿
+
 
 
 
@@ -65,7 +65,7 @@ This project aims to develop an amphibious robotic duck that mimics the appearan
 
 
 # 1. Introduction
-The project focuses on designing and building a functional prototype capable of autonomous movement on both water and land. The robotic duck will feature realistic behaviour such as floating, swimming, and quacking while maintaining energy autonomy for outdoor operation. Development efforts will include hardware design, embedded control systems, power and motor management, sensor integration, software implementation, etc. <br>
+The project focuses on designing and building a functional prototype capable of autonomous movement on water. The robotic duck will feature realistic behaviour such as floating, swimming, and quacking while maintaining energy autonomy for outdoor operation. Development efforts will include hardware design, embedded control systems, power and motor management, sensor integration, software implementation, etc. <br>
 Over the course of the semester, the project will progress through research, hardware development, software implementation, and testing phases. The hardware will primarily cover essential materials, including motors, sensors, waterproofing components, and embedded processing units. Key challenges include ensuring waterproofing and durability, achieving lifelike movement and other behaviours, as well as balancing autonomous behaviour with potential user control.
 By addressing these challenges and delivering a reliable, autonomous system, the project aims to create an innovative and practical robotic companion for outdoor environments.
 
