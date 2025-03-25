@@ -85,6 +85,13 @@ undertaken, what problem or opportunity it aims to address,
 – ...how it aligns with the organization's strategic objectives
 
 
+So far there is no good duck robot on the market that can mimic real duck behaviour and replace the need for actual ducks on one's pond. The developed robot takes this opportunity to fill that market gap and has a big estimated revenue.
+The duck robot is a big opportunity to learn about the world of embedded systems.
+Our strategic objective is to pass the project 4 module and therefore the duck is a great robot that covers a lot of expected technologies.
+
+
+
+
 # 3. Approach
 – The purpose of an approach chapter in a business case is to outline the methodology or
 approach that will be used to execute the project
@@ -113,6 +120,16 @@ of completing the project
 • ... the project team and stakeholders can align their expectations and understand what
 is expected to be produced by the project.
 
+- component list
+- system design
+- robot
+	- working distance sensor
+	- straight movement and automatic turning
+	- plays sound files
+	- is able keep the systems functions up by battery
+	- the robot should have the visual appeal of a duck
+	- a low battery mode where the robot does not leave shore anymore
+	
 
 
 
