@@ -1,4 +1,4 @@
-# Compone
+# Final Components
 
 
 | Item | Category | Supplier | Link | Number to be ordered | Price per stuck |
@@ -8,4 +8,8 @@
 | 3 | Compass | rs-online | [Buy Here](https://nl.rs-online.com/web/p/sensor-development-tools/1947661?gb=s) | x1 | €7.87 |
 | 4 | Step down converter | Robotshop | [Buy Here](https://eu.robotshop.com/products/pololu-5v-step-down-voltage-regulator-d30v30f5-34a-continuous-output) | x1 | €14.92 |
 | 5 | Motor | RS-online | [Buy Here](https://nl.rs-online.com/web/p/dc-motors/2389670) | x2 | €32.56 |
-| 6 | Motor Controller | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/stmicroelectronics/VNH5019ATR-E/3087980) | x2 | €8.79
+| 6 | Motor Controller | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/stmicroelectronics/VNH5019ATR-E/3087980) | x2 | €8.79 |
+| 7 | Voltage Level Translator* | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/texas-instruments/TXB0108PWR/1305699) | x1 | €1.34 |
+
+
+"*" - needed in case of microcontroller with 3.3V
