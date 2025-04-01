@@ -4,15 +4,12 @@
 | Item | Category | Supplier | Link | Number to be ordered | Price per stuck |
 |:----:|----------|----------|------|:-------------------:|:-----:|
 | 1 | Speaker-Module | Tiny-Tronics | [Buy Here](https://www.tinytronics.nl/en/audio/audio-sources/open-smart-mp3-module-with-speaker) | x1 | €7.50 |
-| 2 | Distance sensor | Distrelec | [Buy Here](https://www.distrelec.nl/en/hc-sr04-ultrasonic-distance-sensor-sparkfun-electronics-sen-15569/p/30160395?trackQuery=Distance%20sensor&pos=5&origPos=3&origPageSize=50&track=true&sid=1bde0xNWYx&itemList=search) | x1 | €5.16 |
-| 3 | Compass | rs-online | [Buy Here](https://nl.rs-online.com/web/p/sensor-development-tools/1947661?gb=s) | x1 | €7.87 |
-| 4 | Step down converter | Robotshop | [Buy Here](https://eu.robotshop.com/products/pololu-5v-step-down-voltage-regulator-d30v30f5-34a-continuous-output) | x1 | €14.92 |
-| 5 | Motor | RS-online | [Buy Here](https://nl.rs-online.com/web/p/dc-motors/2389670) | x2 | €32.56 |
-| 6 | Motor Controller | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/stmicroelectronics/VNH5019ATR-E/3087980) | x2 | €8.79 |
-| 7 | Voltage Level Translator* | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/texas-instruments/TXB0108PWR/1305699) | x1 | €1.34 |
+| 2 | Compass | rs-online | [Buy Here](https://nl.rs-online.com/web/p/sensor-development-tools/1947661?gb=s) | x1 | €7.87 |
+| 3 | Step down converter | Robotshop | [Buy Here](https://eu.robotshop.com/products/pololu-5v-step-down-voltage-regulator-d30v30f5-34a-continuous-output) | x1 | €14.92 |
+| 4 | Motor | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/parallax-inc/900-00360/7707660) | x2 | €25.82 |
+| 5 | Microcontroller | TinyTronics |  [Buy Here](https://www.tinytronics.nl/en/development-boards/microcontroller-boards/with-lora/lilygo-ttgo-t3-lora32-868mhz-v1.6.1-esp32) | x2 | €22.00 |
+| 6 | Motor Driver (optional*) | DigiKey | [Buy Here](https://www.digikey.nl/en/products/detail/pololu/713/10450399?s=N4IgTCBcDaICoCEBsSCMYBiA5A4iAugL5A) | x2 | €4.57 |
+| 7 | Battery | Conrad | [Buy Here](https://www.conrad.nl/nl/p/2s1p-7-2v-7-4v-2000mah-cilindrische-li-ion-batterij-met-bms-bescherming-en-open-kabelstrengen-812544972.html#productDescription) | x1 | €24.59 |
 
-
-"*" - needed in case of microcontroller with 3.3V
-
-
-Find in dil (dual in line) not smd?? (Motor controller and Voltage Level translator)
+<br>
+*Technically, we can control the motor directlly with the microcontroller, but the motor driver would ensure better control over RPM and provide additional safety features
