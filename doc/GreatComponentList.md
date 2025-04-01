@@ -13,3 +13,6 @@
 
 
 "*" - needed in case of microcontroller with 3.3V
+
+
+Find in dil (dual in line) not smd?? (Motor controller and Voltage Level translator)
