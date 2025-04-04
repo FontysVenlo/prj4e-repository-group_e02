@@ -12,7 +12,7 @@
 
 
 ## **Abstract:**
-This project aims to develop an amphibious robotic duck that mimics the appearance and behavior of a real duck while freeing of the need for animal care. Designed for outdoor ponds, it offers a lifelike alternative for the presence of a duck without the responsibilities of keeping one. Additionally, the robotic duck can serve as a tool for birdwatching by integrating observation and monitoring capabilities. By combining embedded systems with autonomous movement and environmental adaptability, the project aims to create a functional, self-sustaining robotic companion for outdoor settings.
+This project aims to develop an amphibious robotic duck that mimics the appearance and behaviour of a real duck while freeing of the need for animal care. Designed for outdoor ponds, it offers a lifelike alternative for the presence of a duck without the responsibilities of keeping one. By combining embedded systems with autonomous movement the project aims to create a functional, self-sustaining robotic companion for outdoor settings in order to replace ducks.
 
 **Acronyms**
 
