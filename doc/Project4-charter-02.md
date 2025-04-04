@@ -93,24 +93,27 @@ Our strategic objective is to pass the project 4 module and therefore the duck i
 
 
 # 3. Approach
-– The purpose of an approach chapter in a business case is to outline the methodology or
-approach that will be used to execute the project
-– ...methodologies such as Waterfall, Scrum or a hybrid approach
-– ...provides details on how the project will be planned, managed, and implemented to
-achieve its objectives
-– -> to provide stakeholders with a clear understanding of how the project will be executed
-• In Scope
-– The purpose of an "In Scope" section is to clearly define and delineate the boundaries of the
-project.
-– This section specifies the deliverables, activities, and objectives that are included within the
-scope of the project
-• Out of scope
-– The purpose of an "Out of Scope" section is to explicitly define what is not included within
-the boundaries of the project.
-– ...avoid misunderstandings, prevent scope creep, and ensure that resources are focused on
-the critical objectives of the project
+The project will be conducted in a hybrid scrum way of working with a sprint length of 1 week. A Kanban board will be used to take track of all the use cases that have to be completed and a planning meeting will be used to plan the work for every sprint. Also daily stand up meetings will be used to keep every team member on track with the state of the project.
+To achieve the projects objectives the project will be planned first by ordering and researching all the necessary components needed for the robot to function. On arrival of the components, the project team will use two project weeks with 20 hours of weekly working time to build actual initial hardware and at the end of the semester there will be additional 3 weeks of 40 hours of weekly working time to finish and complete the robot. Every other normal week a minimum of 5 hours will be spend working on the project.
+### 3.1 In Scope 
+The must have scope functionality of the duck robot includes:
+- A working distance sensor that detects the shore
+- An algorithm that turns the robot when it detects the shore and steers it into a different direction
+- A driving system that lets the duck move straight with the help of a compass.
+- A working speaker that plays different "Quack" sounds
+- It needs to operate on its on for at least an hours
+- A low power mode where the duck does not leave the shore anymore after finding it
 
-
+The might haves include:
+- A remote control that takes over the duck
+- Movement on land
+### 3.2 Out of Scope
+- It will not be able to fly
+- It will not be able to throw flames
+- It will not be able to lay eggs
+- It will not include a camera
+- It will not be able to transition from water to ground
+- It will not detect other ducks or interact with them
 
 # 4. Deliverables 
 • ...is to clearly identify and define the tangible or intangible outcomes that the project
