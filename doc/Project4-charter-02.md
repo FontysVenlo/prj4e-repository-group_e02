@@ -159,12 +159,33 @@ project can proceed successfully
 
 
 # 7. Success criteria
-define the specific criteria or benchmarks that will be used to determine whether the
-project has been successful
-– Measurable Objectives (objectives or goal)
-– Acceptance Criteria (definition of done)
-– Key Performance Indicators (KPI) (Lines of codes, code coverage, test
-coverage...)
+The success of the amphibious robotic duck project will be evaluated based on a set of measurable objectives, definitions of completion (acceptance criteria), and key performance indicators (KPIs). These criteria are intended to ensure that the system achieves its primary purpose — providing a life-like, self-operating duck for outdoor pond environments while performing safely in realistic conditions.
+
+### Measurable Objectives
+The main measurable functionality of the robotic duck is its ability to autonomously navigate a water-based environment using the paddle-wheel system. This includes smooth movement, direction control, and responsive navigation. Additionally, onboard sensors must detect obstacles and enable the robot to avoid them in real-time without manual intervention. A built-in speaker module must also be capable of playing a selection of life-like quacking sounds to enhance realism.
+
+For a more detailed breakdown of technical expectations refer to [Deliverables](#4-deliverables) chapter.
+
+### Acceptance Criteria
+The project will be considered complete when the following conditions are met:
+- The robotic duck maintains stable movement on water and can adjust its trajectory based on data from onboard obstacle detection sensors.
+- The system is capable of operating for at least 60 minutes on a single charge under average load conditions, including motor and sensor activity.
+- The software supports secondary modes, such as a low battery mode, which automatically limits operation and keeps the duck near the shoreline once power drops below a predefined threshold.
+- The duck emits quacking sounds at realistic intervals to simulate the presence of a real duck.
+
+### Key Perfromance Indecators
+Software Performance: 
+- All autonomous behaviors (navigation, low-battery fallback) must pass simulated and real-world test cases with ≥ 90% consistency.
+- Control system must maintain a response time below 200 ms in manual mode.
+
+Hardware Performance:
+- Motors maintain operation within ±10% of the expected RPM under normal conditions.
+- Obstacle detection system has an accuracy of ≥ 95% within the 0.5–2 meter range.
+- Motor temperature stays below X°C during prolonged use (value to be defined through testing).
+
+Operational Success:
+- The duck must maintain floating position and movement stability in at least 85% of tested water conditions (e.g., small waves, uneven pond surfaces).
+- The robot must successfully complete an autonomous navigation, demonstrating at least 80% success rate in obstacle avoidance scenarios during test runs.
 
 <a name="appendix"></a>
 # Appendix 
