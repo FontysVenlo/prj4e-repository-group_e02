@@ -116,24 +116,30 @@ The might haves include:
 - It will not detect other ducks or interact with them
 
 # 4. Deliverables 
-• ...is to clearly identify and define the tangible or intangible outcomes that the project
-is expected to produce
-• ...specific products, services, reports, or other results that will be delivered as a result
-of completing the project
-• ... the project team and stakeholders can align their expectations and understand what
-is expected to be produced by the project.
+The project will result in a set of defined deliverables, which represent the main outcomes of the development process. These deliverables serve as a mutual point of reference for project team members and other stakeholders to align expectations and track progress. The final results will reflect both the technical functionality and the organizational goals of the project.
 
-- component list
-- system design
-- robot
-	- working distance sensor
-	- straight movement and automatic turning
-	- plays sound files
-	- is able keep the systems functions up by battery
-	- the robot should have the visual appeal of a duck
-	- a low battery mode where the robot does not leave shore anymore
-	
+### 4.1 Hardware and Component deliverables:
+- A complete component list documenting all parts used in the final product, including motors, motor drivers, control modules, sensors, power units, and other relevant electronics or mechanical parts.
+- A reusable power solution, rechargeable battery with efficient management and safety features.
+- A distance sensor integrated into the final model in an optimal position to detect obstacles with high efficiency and accuracy.
+- A speaker module playing preuploaded quacking tracks within reasonable volume range.
+- A fully operational propulsion system for water-based enviroment with two Mississippi-type paddle wheels.
+- An outer frame resembling a duck.
 
+### 4.2 Software deliverables:
+- Fully developed embedded software controlling autonomous behavior, sensor input handling, obstacle avoidance, sound playback, and power management logic.
+- The code must be well-structured and maintainable, with proper commenting and implementation of software development design principles (e.g., single responsibility, separation of concerns, fail-safe logic).
+- Implementation of a low battery mode, need for keeping the duck near the shore when battery charge falls below a critical level.
+- Optional support for RC control.
+
+
+### 4.3 Final Robot deliverable:
+- Fully functional amphibious robotic duck, capable of operating autonomously on water, demonstrating stable navigation, sensor-based behavior, and basic interaction through sound.
+- The robot capable of straight-line and manouvering movement, with the ability to adjust course automatically based on environmental input.
+- All core systems should be sustained via onboard rechargeable battery power.
+- The duck has a life-like visual appeal, fitting its intended use in outdoor ponds as a realistic animal alternative.
+- The final model includes basic safety features, such as automatic shutdown in the event of critical faults or water damage detection.
+- Supporting documentation delivered alongside the robot, including system schemas, wiring diagrams, component specifications, assembly instructions, and usage guidelines.
 
 
 # 5. Quality management 
@@ -161,19 +167,19 @@ project can proceed successfully
 # 7. Success criteria
 The success of the amphibious robotic duck project will be evaluated based on a set of measurable objectives, definitions of completion (acceptance criteria), and key performance indicators (KPIs). These criteria are intended to ensure that the system achieves its primary purpose — providing a life-like, self-operating duck for outdoor pond environments while performing safely in realistic conditions.
 
-### Measurable Objectives
+### 7.1 Measurable Objectives
 The main measurable functionality of the robotic duck is its ability to autonomously navigate a water-based environment using the paddle-wheel system. This includes smooth movement, direction control, and responsive navigation. Additionally, onboard sensors must detect obstacles and enable the robot to avoid them in real-time without manual intervention. A built-in speaker module must also be capable of playing a selection of life-like quacking sounds to enhance realism.
 
 For a more detailed breakdown of technical expectations refer to [Deliverables](#4-deliverables) chapter.
 
-### Acceptance Criteria
+### 7.2 Acceptance Criteria
 The project will be considered complete when the following conditions are met:
 - The robotic duck maintains stable movement on water and can adjust its trajectory based on data from onboard obstacle detection sensors.
 - The system is capable of operating for at least 60 minutes on a single charge under average load conditions, including motor and sensor activity.
 - The software supports secondary modes, such as a low battery mode, which automatically limits operation and keeps the duck near the shoreline once power drops below a predefined threshold.
 - The duck emits quacking sounds at realistic intervals to simulate the presence of a real duck.
 
-### Key Perfromance Indecators
+### 7.3 Key Perfromance Indecators
 Software Performance: 
 - All autonomous behaviors (navigation, low-battery fallback) must pass simulated and real-world test cases with ≥ 90% consistency.
 - Control system must maintain a response time below 200 ms in manual mode.
