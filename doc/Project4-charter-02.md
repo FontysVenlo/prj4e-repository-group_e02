@@ -143,24 +143,71 @@ The project will result in a set of defined deliverables, which represent the ma
 
 
 # 5. Quality management 
-...to outline the approach and processes that will be employed to ensure that the
-project's deliverables meet the required quality standards
-– Quality Objectives (e.g. ISO XXXXX, CE certified)
-– Quality Assurance (formal compliance checks with the standards)
-– Quality Control (pair programming, code review)
-– Roles and Responsibilities (quality representative, who is responsible in the end)
+We are being evaluated on our project mainly through portfolio-based grading, so while it is nice to have the robotic duck working like it is intended.The focus is how we arrive there—how we experiment, what we discover, how we write it down on the way, and what we learn. 
+
+### 5.1 Quality Goals
+
+-The duck should be able to swim in water alone (or half-way alone at least) and perform programmed behavior.
+-We want to make sure the key features, like movement, power, and code are working like intended.
+-We have selected a lower voltage motor in order to save power consumption and total weight, which will ensure that our duck doesn't sink.
+-We're also trying to get a good balance between the power supply's weight and how long it will propel the duck for.
+-The plan is to do a lot of experimenting (such as trying different motor settings, wheel diameters, and power supply) and document what we find out to have a nice overview of our test results. This way we can improve the duck and find the perfect settings.
+
+### 5.2 Quality Assurance
+
+-We will start testing in smaller water containers like bathtubs or buckets before we move on to the "sea" on campus.
+-Since waterproofing is a risky process, we will test the circuit separately outside of the duck first. That way, we won't be risking breaking equipment pieces too early.
+-Every test, setup, and output that we do will be recorded in our team's GitHub repository, aswell as photos, comments, and observations too.
+
+### 5.3 Quality Control
+
+-With each test we perform, we'll check how well the duck can move, turn, and respond to commands.
+-Before any water-test, we will check everything for waterproofing (visible and potentially in dunk tests) to ensure they are properly shut.
+-When breaking something or getting it working incorrectly, we will write down or record that, work out what went wrong, and make changes before re-testing it.
+
+### 5.4 Standards
+
+-We're keeping our code clean and tidy and utilizing GitHub to track every branch, modification, and team feedback.
+-Our team collaborates closely, sharing knowledge and keeping each other updated to ensure we're all involved and learning from every part of the project.
+
+### 5.5 Team Roles
+
+-Everyone is currently working on all aspects of the project. Like hardware, software, design, waterproofing, etc.
+-If we ever do end up dividing the work later on, we'll still continue to inform each other so that all of us are aware of what's happening and can learn from each part of the project.
 
 
 
 # 6. Prerequisite
-to outline any specific requirements or conditions that must be met before the
-project can proceed successfully
-– Hardware Requirements
-– Software Requirements
-– Infrastructure Requirements
-– Skills and Expertise
-` `-> Can be used later for requirements engineering
+There are some thinks which needs to be done tille we can completely start with building the robotic duck.
 
+### 6.1 Parts and Components
+
+-The university will be providing the ESP32 LoRa module. We haven't made all the details final for all aspects, but we did decide on a low-voltage motor so the build is light and is lower on power consumption.
+-For power, we will explore a setup that has some combination of weight to runtime so the duck remains stable while running long enough to thoroughly test it.
+-We will start with borrowed batteries from the university, and after we get a feel for what will work, we will purchase more suitable ones if needed.
+
+### 6.2 Base Setup and 3D Printing
+
+-We found an open-source design for the water wheels that looks good. We'll try it on and see how well it fits and works before committing.
+-Our first tests will only use the plain duck base (no electronics) to see how it floats, how stable it is, and how much weight it can carry safely.
+
+### 6.3 Control and Communication
+
+-Wireless connection with the LoRa won't be important in this project. Autonomous movement is our top priority.
+-For early testing, we’ll probably attach a rope to the duck so we can easily recover it. If everything works well, we’ll try adding remote control using RC modules later on.
+
+
+### 6.4 Testing Environment
+
+-We will start small—bathtubs, buckets, etc.—and work our way up to campus sea for full-scale testing.
+-During early tests, we’ll also look at how much weight the base can handle before it becomes unstable or starts sinking.
+-Safety of components is key—so we’ll avoid putting any electronics on the duck until we’re confident it can float reliably.
+
+### 6.5 Risks
+
+-There’s a chance things might go wrong in the water—like motors failing, the duck flipping, or waterproofing not holding up.
+-Power issues (like weak batteries, unstable connections, or underpowered components) could also be a problem.
+-To handle this, we’ll test things step by step, starting with the basics and building up once we’re confident in each part.
 
 
 
