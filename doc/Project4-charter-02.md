@@ -6,7 +6,7 @@
 # Project charter
 
 ### Embedded application – Duck
-##### Author: group 2 <br> Location: Fontys University, Tegelseweg 255, 5912 BG Venlo <br> Version:   <br>  Date: 
+##### Author: group 2 <br> Location: Fontys University, Tegelseweg 255, 5912 BG Venlo <br> Version: v1.4  <br>  Date: 06.04.2025
 
 
 
@@ -19,6 +19,8 @@ This project aims to develop an amphibious robotic duck that mimics the appearan
 
 |**Abbreviation**|**Meaning**|
 | :- | :- |
+| KPI | Key Performance Indicator(s) |
+| WBS | Work Breakdown Structure |
 
 
 <br>
@@ -29,7 +31,11 @@ This project aims to develop an amphibious robotic duck that mimics the appearan
 
 |**Version**|**Date**|**Comment**|
 | :-: | :-: | :-: |
-|0\.1|....|First draft|
+| 0\.1 | 14.03.2025 |First draft|
+| 1.1 | 25.03.2025 | Initial chapters notes |
+| 1.2 | 31.03.2025 | Chapters 1, 3, abstract, Introduction |
+| 1.3 | 05.04.2025 | Chapters 2, 4, 7, WBS |
+| 1.4 | 06.04.2025 | Chapters 5, 6 |
 
 
 ---
@@ -77,17 +83,12 @@ By addressing these challenges and delivering a reliable, autonomous system, the
 
 
 # 2. Business case
-\- The purpose of a business case description is to provide an overview of the justification for
-the project from a business perspective.
-– ...need or opportunity, the expected benefits and outcomes.
-– The business case description helps stakeholders understand why the project is being
-undertaken, what problem or opportunity it aims to address,
-– ...how it aligns with the organization's strategic objectives
 
+There is currently no widely available robotic duck on the market that convincingly mimics the appearance and behavior of a real duck. For pond owners and outdoor enthusiasts who wish to enjoy the presence of the bird without the responsibilities of caring for live animals, this prpject fills out the empty market gap. Robotic duck targets that gap, focusing on developing a lifelike amphibious robotic duck that can autonomously navigate water, respond to environmental changes in realtme, and produce realistic quacking sounds.
 
-So far there is no good duck robot on the market that can mimic real duck behaviour and replace the need for actual ducks on one's pond. The developed robot takes this opportunity to fill that market gap and has a big estimated revenue.
-The duck robot is a big opportunity to learn about the world of embedded systems.
-Our strategic objective is to pass the project 4 module and therefore the duck is a great robot that covers a lot of expected technologies.
+Besides its potential as a product with market prospects, this project also serves an important educational purpose. It provides a practical, hands-on opportunity to deepen developers' understanding of embedded systems, including areas such as motor control, sensor integration, wireless communication, and power management.
+
+From an academic standpoint, the primary goal is to successfully complete and pass the Project 4 module. The amphibious robotic duck aligns well with the learning outcomes of the course, as it incorporates a broad range of embedded technologies and team collaboration. This combination of commercial potential and academic value makes the project both an intresting prototype and an effective learning platform.
 
 
 
@@ -242,3 +243,5 @@ Operational Success:
 
 <a name="appendix"></a>
 # Appendix 
+### Appendix A: Work Breakdown Structure 
+![Work](/doc/images/workbreakdown.png)
