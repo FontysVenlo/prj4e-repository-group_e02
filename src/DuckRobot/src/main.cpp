@@ -1,5 +1,6 @@
 
 #include <Arduino.h>
+#include "soundManager.h"
 #define LED 25
 
 void heartbeat(void * parameter);
@@ -7,23 +8,31 @@ void heartbeat(void * parameter);
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-
   pinMode(LED, OUTPUT);
+
+  //hearthbeat thread
   xTaskCreate(
-  heartbeat, // Function that should be called
-  "heartbeat", // Name of the task (for debugging)
-  2000, // Stack size (bytes)
-  (void *) LED, // Parameter to pass
-  1, // Task priority
-  NULL // Task handle
+    heartbeat, // Function that should be called
+    "heartbeat", // Name of the task (for debugging)
+    2000, // Stack size (bytes)
+    (void *) LED, // Parameter to pass
+    1, // Task priority
+    NULL // Task handle
+  );
+
+  xTaskCreate(
+    start, // Function that should be called
+    "soundTask", // Name of the task (for debugging)
+    2000, // Stack size (bytes)
+    NULL, // Parameter to pass
+    1, // Task priority
+    NULL // Task handle
   );
 }
 
 void loop() {
 
 }
-
-
 
 
 void heartbeat(void * parameter){
