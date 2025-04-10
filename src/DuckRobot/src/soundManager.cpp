@@ -39,7 +39,7 @@ int playRandomSound(){
       playCommand[4] = r; // Set the song index to play
       mp3Serial.write(playCommand, sizeof(playCommand));
     
-      Serial.print("Playing song number: ");
+      Serial.print("Playing mp3 file number: ");
       Serial.println(r);
       delay(200);
     }
