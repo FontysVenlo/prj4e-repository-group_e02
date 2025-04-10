@@ -20,6 +20,7 @@ void setup() {
     NULL // Task handle
   );
 
+  //soundManager thread
   xTaskCreate(
     start, // Function that should be called
     "soundTask", // Name of the task (for debugging)
@@ -28,6 +29,8 @@ void setup() {
     1, // Task priority
     NULL // Task handle
   );
+
+  //threads to be added...
 }
 
 void loop() {
