@@ -11,14 +11,12 @@
             "id": "06420b98347586b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "doc/Project4-charter-02.md",
-                "mode": "source",
-                "source": false
+                "file": "doc/datasheets/compass-datasheet.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Project4-charter-02"
+              "icon": "lucide-file-text",
+              "title": "compass-datasheet"
             }
           }
         ]
@@ -168,19 +166,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06420b98347586b4",
+  "active": "1a3e6ead287b884b",
   "lastOpenFiles": [
+    "src/DuckRobot/src/movementManager.cpp",
+    "src/DuckRobot/src/movementManager",
+    "src/DuckRobot/src/soundManager.cpp",
+    "src/DuckRobot/src/Sound",
+    "src/DuckRobot/src/main.cpp",
+    "src/DuckRobot/test/README",
+    "src/DuckRobot/test",
+    "src/DuckRobot/lib/README",
+    "src/DuckRobot/lib",
+    "src/DuckRobot/include/README",
+    "src/DuckRobot/include",
     "doc/GreatComponentList.md",
-    "doc/datasheets/speaker-datasheets.pdf",
-    "doc/datasheets/motordrive-datasheet.pdf",
-    "doc/datasheets/motor-datasheets.pdf",
-    "doc/datasheets/compass-datasheet.pdf",
-    "doc/datasheets",
     "doc/Project4-charter-02.md",
     "doc/initial-project-idea.md",
     "README.md",
     "doc/components.md",
-    "doc/Project4-charter-02.docx",
     "doc/Initial Project Idea prj4.md"
   ]
 }
