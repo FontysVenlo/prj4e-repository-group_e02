@@ -168,6 +168,8 @@
   },
   "active": "1a3e6ead287b884b",
   "lastOpenFiles": [
+    "src/DuckRobot/src/movementManager.h",
+    "src/DuckRobot/src/soundManager.h",
     "src/DuckRobot/src/movementManager.cpp",
     "src/DuckRobot/src/movementManager",
     "src/DuckRobot/src/soundManager.cpp",
@@ -177,8 +179,6 @@
     "src/DuckRobot/test",
     "src/DuckRobot/lib/README",
     "src/DuckRobot/lib",
-    "src/DuckRobot/include/README",
-    "src/DuckRobot/include",
     "doc/GreatComponentList.md",
     "doc/Project4-charter-02.md",
     "doc/initial-project-idea.md",

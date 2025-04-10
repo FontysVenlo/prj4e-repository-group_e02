@@ -30,6 +30,16 @@ void setup() {
     NULL // Task handle
   );
 
+  //movementManager thread
+  xTaskCreate(
+    start, // Function that should be called
+    "movementTask", // Name of the task (for debugging)
+    2000, // Stack size (bytes)
+    NULL, // Parameter to pass
+    1, // Task priority
+    NULL // Task handle
+  );
+
   //threads to be added...
 }
 
