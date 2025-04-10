@@ -1,6 +1,8 @@
 
 #include <Arduino.h>
 #include "soundManager.h"
+#include "movementManager.h"
+
 #define LED 25
 
 void heartbeat(void * parameter);
@@ -32,7 +34,7 @@ void setup() {
 
   //movementManager thread
   xTaskCreate(
-    start, // Function that should be called
+    startMovement, // Function that should be called
     "movementTask", // Name of the task (for debugging)
     2000, // Stack size (bytes)
     NULL, // Parameter to pass
