@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "movementManager.h"
-#include "DistanceSensorManager.h"
+#include "distanceSensorManager.h"
 
 void startMovement(void * parameter){
     xTaskCreate(

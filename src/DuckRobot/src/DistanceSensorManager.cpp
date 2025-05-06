@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "DistanceSensorManager.h"
+#include "distanceSensorManager.h"
 #include <Wire.h>
 
 #define trigger 13

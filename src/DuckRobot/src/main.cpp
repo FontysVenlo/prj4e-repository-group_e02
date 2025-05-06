@@ -2,6 +2,7 @@
 #include <Arduino.h>
 #include "soundManager.h"
 #include "movementManager.h"
+#include "compassManager.h"
 
 #define LED 25
 
@@ -42,6 +43,16 @@ void setup() {
     NULL // Task handle
   );
 
+  //compassManager thread 
+  xTaskCreate(
+    startCompass,     // Function that should be called
+    "compassTask",    // Name of the task
+    3000,             // Stack size (bytes)
+    NULL,             // Parameter
+    1,                // Task priority
+    NULL              // Task handle
+  );
+  
   //threads to be added...
 }
 
