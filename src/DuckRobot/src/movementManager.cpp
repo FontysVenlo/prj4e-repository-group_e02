@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include "movementManager.h"
-#include "distanceSensorManager.h"
 
 const int motorPin1 = 12;  // white
 const int motorPin2 = 14;
@@ -15,9 +14,8 @@ const int maxDelta = 820;
 
 void move();
 
-void start() {
-    Serial.begin(115200);
-    delay(1000);
+void startMovementManager(void * parameter) {
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
   
     // PWM
     ledcSetup(pwmChannel, pwmFreq, pwmResolution);
@@ -26,51 +24,35 @@ void start() {
     ledcAttachPin(motorPin2, pwmChannel2);
   
     Serial.println("Start test");
-  }  
-
-void startMovement(void * parameter){
-    start();
-    xTaskCreate(
-        startDistanceSensor, // Function that should be called
-        "distanceSensor", // Name of the task (for debugging)
-        4096, // Stack size (bytes)
-        NULL, // Parameter to pass
-        1, // Task priority
-        NULL // Task handle
-      );
-
-    for(;;){
-        // Serial.println(getDistance());
-        delay(500);
-        move();
+    for (;;) {
+        vTaskDelay(500 / portTICK_PERIOD_MS);
+        move(); 
     }
-}
-   
+}  
 
 void move() {
-        // anti clock wise
-        ledcWrite(pwmChannel, centerPulse + maxDelta);
-        ledcWrite(pwmChannel2, centerPulse + maxDelta);
-        Serial.println("Forward");
-        delay(3000);
+    // anti clock wise
+    ledcWrite(pwmChannel, centerPulse + maxDelta);
+    ledcWrite(pwmChannel2, centerPulse + maxDelta);
+    Serial.println("Forward");
+    vTaskDelay(3000 / portTICK_PERIOD_MS);
 
-        // Stop
-        ledcWrite(pwmChannel, centerPulse);
-        ledcWrite(pwmChannel2, centerPulse);
-        Serial.println("Stop");
-        Serial.println(getDistance());
-        delay(1000);
+    // Stop
+    ledcWrite(pwmChannel, centerPulse);
+    ledcWrite(pwmChannel2, centerPulse);
+    Serial.println("Stop");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
 
-        // clock wise
-        ledcWrite(pwmChannel, centerPulse - maxDelta);
-        ledcWrite(pwmChannel2, centerPulse - maxDelta);
-        Serial.println("Back");
-        delay(3000);
+    // clock wise
+    ledcWrite(pwmChannel, centerPulse - maxDelta);
+    ledcWrite(pwmChannel2, centerPulse - maxDelta);
+    Serial.println("Back");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
 
-        // Stop
-        ledcWrite(pwmChannel, centerPulse);
-        ledcWrite(pwmChannel2, centerPulse);
-        Serial.println("Stop");
-        Serial.println(getDistance());
-        delay(1000);
+    // Stop
+    ledcWrite(pwmChannel, centerPulse);
+    ledcWrite(pwmChannel2, centerPulse);
+    Serial.println("Stop");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    
 }
