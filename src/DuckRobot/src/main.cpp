@@ -17,7 +17,7 @@ void setup() {
   xTaskCreate(
     heartbeat, // Function that should be called
     "heartbeat", // Name of the task (for debugging)
-    2000, // Stack size (bytes)
+    4096, // Stack size (bytes)
     (void *) LED, // Parameter to pass
     1, // Task priority
     NULL // Task handle
@@ -27,7 +27,7 @@ void setup() {
   xTaskCreate(
     start, // Function that should be called
     "soundTask", // Name of the task (for debugging)
-    2000, // Stack size (bytes)
+    4096, // Stack size (bytes)
     NULL, // Parameter to pass
     1, // Task priority
     NULL // Task handle
@@ -37,7 +37,7 @@ void setup() {
   xTaskCreate(
     startMovement, // Function that should be called
     "movementTask", // Name of the task (for debugging)
-    2000, // Stack size (bytes)
+    4096, // Stack size (bytes)
     NULL, // Parameter to pass
     1, // Task priority
     NULL // Task handle
@@ -47,7 +47,7 @@ void setup() {
   xTaskCreate(
     startCompass,     // Function that should be called
     "compassTask",    // Name of the task
-    3000,             // Stack size (bytes)
+    4096,             // Stack size (bytes)
     NULL,             // Parameter
     1,                // Task priority
     NULL              // Task handle
