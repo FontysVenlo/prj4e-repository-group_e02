@@ -1,7 +1,7 @@
 
 #include <Arduino.h>
 #include "soundManager.h"
-#include "movementManager.h"
+#include "movementLogicManager.h"
 #include "compassManager.h"
 
 #define LED 25
@@ -22,7 +22,6 @@ void setup() {
     1, // Task priority
     NULL // Task handle
   );
-
   //soundManager thread
   xTaskCreate(
     start, // Function that should be called
@@ -32,8 +31,9 @@ void setup() {
     1, // Task priority
     NULL // Task handle
   );
+  
 
-  //movementManager thread
+  //movementLogicManager thread
   xTaskCreate(
     startMovement, // Function that should be called
     "movementTask", // Name of the task (for debugging)
