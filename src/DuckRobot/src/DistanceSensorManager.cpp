@@ -23,7 +23,7 @@ void startDistanceSensor(void * parameter){
 
         duration = pulseIn(echo, HIGH);
         distance = duration * 0.034 / 2;
-        delay(100); // half a second
+        delay(100); 
         Serial.print("Distance: ");
         Serial.println(distance);
     }
