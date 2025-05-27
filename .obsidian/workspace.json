@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "doc/datasheets/compass-datasheet.pdf"
+                "file": "documentation/datasheets/motor-datasheets.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "compass-datasheet"
+              "title": "motor-datasheets"
             }
           }
         ]
@@ -166,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a3e6ead287b884b",
+  "active": "06420b98347586b4",
   "lastOpenFiles": [
+    "documentation/GreatComponentList.md",
     "src/DuckRobot/src/movementManager.h",
     "src/DuckRobot/src/soundManager.h",
     "src/DuckRobot/src/movementManager.cpp",
@@ -178,7 +179,6 @@
     "src/DuckRobot/test/README",
     "src/DuckRobot/test",
     "src/DuckRobot/lib/README",
-    "src/DuckRobot/lib",
     "doc/GreatComponentList.md",
     "doc/Project4-charter-02.md",
     "doc/initial-project-idea.md",

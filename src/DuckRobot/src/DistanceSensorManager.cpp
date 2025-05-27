@@ -5,7 +5,7 @@
 #define trigger 13
 #define echo 15
 
-float distance = -1;
+float distance = 9999;
 
 void startDistanceSensor(void * parameter){
     pinMode(trigger, OUTPUT);
@@ -23,7 +23,7 @@ void startDistanceSensor(void * parameter){
 
         duration = pulseIn(echo, HIGH);
         distance = duration * 0.034 / 2;
-        delay(500); // half a second
+        delay(100); // half a second
         Serial.print("Distance: ");
         Serial.println(distance);
     }
