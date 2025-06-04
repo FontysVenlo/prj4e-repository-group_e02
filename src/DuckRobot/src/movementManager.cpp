@@ -12,7 +12,12 @@ const int pwmResolution = 16;
 const int centerPulse = 4915; 
 const int maxDelta = 820; 
 
+int state = 0;
+
 void move();
+void handleState();
+void stop();
+void turn();
 
 void startMovementManager(void * parameter) {
     vTaskDelay(1000 / portTICK_PERIOD_MS);
@@ -23,36 +28,41 @@ void startMovementManager(void * parameter) {
     ledcSetup(pwmChannel2, pwmFreq, pwmResolution);
     ledcAttachPin(motorPin2, pwmChannel2);
   
-    Serial.println("Start test");
-    for (;;) {
-        vTaskDelay(500 / portTICK_PERIOD_MS);
-        move(); 
-    }
+    Serial.println("Start motors");
+    handleState();
 }  
+
+void handleState(){
+    for (;;) {
+        if (state == 1){
+            move();
+        }else if(state == 2){
+            turn();
+        }else if(state == 3){
+            stop();
+        }
+    }
+}
 
 void move() {
     // anti clock wise
     ledcWrite(pwmChannel, centerPulse + maxDelta);
+    //clock wise
+    ledcWrite(pwmChannel2, centerPulse - maxDelta);
+    Serial.println("Forward");
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+}
+
+void turn(){
+    ledcWrite(pwmChannel, centerPulse + maxDelta);
     ledcWrite(pwmChannel2, centerPulse + maxDelta);
     Serial.println("Forward");
-    vTaskDelay(3000 / portTICK_PERIOD_MS);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+}
 
-    // Stop
+void stop(){
     ledcWrite(pwmChannel, centerPulse);
     ledcWrite(pwmChannel2, centerPulse);
     Serial.println("Stop");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-
-    // clock wise
-    ledcWrite(pwmChannel, centerPulse - maxDelta);
-    ledcWrite(pwmChannel2, centerPulse - maxDelta);
-    Serial.println("Back");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-
-    // Stop
-    ledcWrite(pwmChannel, centerPulse);
-    ledcWrite(pwmChannel2, centerPulse);
-    Serial.println("Stop");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-    
+    vTaskDelay(500 / portTICK_PERIOD_MS);
 }
