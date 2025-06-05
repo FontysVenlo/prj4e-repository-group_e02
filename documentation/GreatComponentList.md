@@ -11,9 +11,6 @@
 | 6 | Motor Driver (optional*) | Pololu TB6612FNG DUAL MOTOR DRIVER| DigiKey | x2 | €4.57 | [DigiKey](https://www.digikey.nl/en/products/detail/pololu/713/10450399?s=N4IgTCBcDaICoCEBsSCMYBiA5A4iAugL5A) | Delivered |
 | 7 | Batteries | LiPo 3.7V battery 2500mAh  | Conrad | x2 | €24.59 | [Conrad](https://www.conrad.nl/nl/p/akyga-lp475085-accupack-batterijgrootte-speciaal-lipo-3-7-v-2500-mah-3385860.html) or similar | Delivered |
 
-<br>
-*Technically, we can control the motor directlly with the microcontroller, but the motor driver would ensure better control over RPM and provide additional safety features
-
 ### Added later / Not for ordering
 
 | Item | Category | Module Name | Link |
