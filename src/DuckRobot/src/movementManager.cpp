@@ -66,3 +66,5 @@ void stop(){
     Serial.println("Stop");
     vTaskDelay(500 / portTICK_PERIOD_MS);
 }
+
+//should maye use vTaskDelay(1) when able to test out
