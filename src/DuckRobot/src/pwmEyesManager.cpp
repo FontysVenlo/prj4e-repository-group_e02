@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include "pwmEyesManager.h"
 
-const int freq = 5000;
-const int resolution = 8;
-const int ledChannel0 = 0;
+#define freq 5000
+#define resolution  8
+#define ledChannel0  0
 
 const int ledPin0 = 4;   //THEY NEED TO BE CHANGED
 
