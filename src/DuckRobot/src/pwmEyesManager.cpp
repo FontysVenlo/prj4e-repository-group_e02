@@ -5,7 +5,7 @@
 #define resolution  8
 #define ledChannel0  0
 
-const int ledPin0 = 4;   //THEY NEED TO BE CHANGED
+#define ledPin0 4   
 
 
 void startPWM();

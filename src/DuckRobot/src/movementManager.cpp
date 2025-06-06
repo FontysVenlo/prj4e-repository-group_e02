@@ -1,16 +1,16 @@
 #include <Arduino.h>
 #include "movementManager.h"
 
-const int motorPin1 = 12;  // white
-const int motorPin2 = 14;
+#define motorPin1 12  // white
+#define motorPin2 14
 
 // Settings PWM
-const int pwmChannel = 0;
-const int pwmChannel2 = 1;
-const int pwmFreq = 50;       
-const int pwmResolution = 16; 
-const int centerPulse = 4915; 
-const int maxDelta = 820; 
+#define pwmChannel 0
+#define pwmChannel2 1
+#define pwmFreq 50       
+#define pwmResolution 16
+#define centerPulse 4915
+#define maxDelta 820
 
 int state = 0;
 
