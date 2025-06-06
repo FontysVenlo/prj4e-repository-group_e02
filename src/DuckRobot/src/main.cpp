@@ -3,6 +3,7 @@
 #include "soundManager.h"
 #include "movementLogicManager.h"
 #include "compassManager.h"
+  #include "pwmEyesManager.h"
 
 #define LED 25
 
@@ -51,6 +52,15 @@ void setup() {
     NULL,             // Parameter
     1,                // Task priority
     NULL              // Task handle
+  );
+
+  xTaskCreate(
+    setupPWM, // Function that should be called
+    "pwmEyes", // Name of the task (for debugging)
+    4096, // Stack size (bytes)
+    NULL, // Parameter to pass
+    1, // Task priority
+    NULL // Task handle
   );
   
   //threads to be added...
