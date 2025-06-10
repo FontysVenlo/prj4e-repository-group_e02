@@ -2,11 +2,10 @@
 #include "pwmEyesManager.h"
 
 #define freq 5000
-#define resolution  8
-#define ledChannel0  0
+#define resolution 8
+#define ledChannel0  2
 
-#define ledPin0 4   
-
+#define ledPin0 2  
 
 void startPWM();
 
