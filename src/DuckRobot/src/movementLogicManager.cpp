@@ -73,8 +73,8 @@ void normalMovement(int distance, int prevDist) {
   // Smooth transition to prevent immediate direction changes
   if ((prevDist < 30 && distance >= 30) || (prevDist >= 30 && distance < 30))
   {
-    state = 3;
-    delay(1000);
+    state = 3; //stop
+    delay(350);
   }
 
   if (distance < 30)

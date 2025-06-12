@@ -11,14 +11,12 @@
             "id": "06420b98347586b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "documentation/GreatComponentList.md",
-                "mode": "source",
-                "source": false
+                "file": "documentation/datasheets/speaker-datasheet.pdf"
               },
-              "icon": "lucide-file",
-              "title": "GreatComponentList"
+              "icon": "lucide-file-text",
+              "title": "speaker-datasheet"
             }
           }
         ]
@@ -170,6 +168,8 @@
   },
   "active": "06420b98347586b4",
   "lastOpenFiles": [
+    "documentation/datasheets/motor-datasheets.pdf",
+    "documentation/GreatComponentList.md",
     "src/DuckRobot/src/pwmEyesManager.h",
     "src/DuckRobot/src/pwmEyesManager.cpp",
     "documentation/images/PRJ_week_2/description",
@@ -180,11 +180,8 @@
     "documentation/images/PRJ_week_2",
     "documentation/retrospective-results.md",
     "documentation/datasheets/compass-datasheet.pdf",
-    "documentation/GreatComponentList.md",
-    "documentation/datasheets/motor-datasheets.pdf",
     "documentation/images/circuit_imageV2.svg",
     "documentation/datasheets/speaker-datasheet.pdf",
-    "documentation/datasheets/distance-datasheets.pdf",
     "doc/GreatComponentList.md",
     "doc/Project4-charter-02.md",
     "doc/initial-project-idea.md",

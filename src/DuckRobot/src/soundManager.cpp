@@ -32,7 +32,7 @@ int playRandomSound(){
       int timeToWait = rand() % 20 + 20; //delay between the quacks
       delay(timeToWait * 1000);
   
-      int r = rand() % 10 + 1; 
+      int r = rand() % 20 + 1;
       Serial.println(r);
   
       byte playCommand[] = { 0x7E, 0x04, 0x41, 0x00, 0x00, 0xEF };
