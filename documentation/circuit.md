@@ -22,7 +22,7 @@ Remarks:
 
 ### Version 1: 
 First rough draft only with initial components: microcontroller, compass, speaker module, distance sensor, servo motors and LiPo batteries connected in 2S.
-![V1](/documentation/images/circuit_image.svg)
+![V1](/documentation/images/circuit_image_v1.svg)
 
 <br>
 

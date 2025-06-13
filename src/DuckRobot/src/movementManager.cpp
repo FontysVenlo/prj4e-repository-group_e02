@@ -12,30 +12,27 @@
 #define centerPulse 4915
 #define maxSpeed 205 // 820 max speed
 
-int delta = 20; //to understand why 20 pls look at the datasheet average rotational velocity graph
-int state = 0;
+int delta = 40; //to understand why 20 pls look at the datasheet average rotational velocity graph
+volatile int state = 0;
 
-void move();
 void handleState();
+void move();
 void stop();
 void turn();
 
 void startMovementManager(void * parameter) {
-    vTaskDelay(1750 / portTICK_PERIOD_MS);
-  
     // PWM
     ledcSetup(pwmChannel, pwmFreq, pwmResolution);
     ledcAttachPin(motorPin1, pwmChannel);
     ledcSetup(pwmChannel2, pwmFreq, pwmResolution);
     ledcAttachPin(motorPin2, pwmChannel2);
   
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
     // Serial.println("Start motors");
     handleState();
 }  
 
 void handleState(){
-
-
     for (;;) {
         if (state == 1){
             move();
@@ -69,7 +66,7 @@ void turn(){
 }
 
 void stop(){
-    delta = 20; //to understand why 20 pls look at the datasheet average rotational velocity graph
+    delta = 40; //to understand why 20 pls look at the datasheet average rotational velocity graph
     ledcWrite(pwmChannel, centerPulse);
     ledcWrite(pwmChannel2, centerPulse);
     // Serial.println("Stop");
