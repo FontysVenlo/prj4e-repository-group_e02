@@ -21,7 +21,7 @@ void start(void * parameter){
     byte setVolume[] = { 0x7E, 0x03, 0x31, 0x1E, 0xEF };
     mp3Serial.write(setVolume, sizeof(setVolume));
     delay(200); // wait for it to work
-    srand(time(NULL));   // Initialization, should only be called once.
+    randomSeed(analogRead(0));   // Initialization, should only be called once.
   
     playRandomSound();
 }
