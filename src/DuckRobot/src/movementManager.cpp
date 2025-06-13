@@ -10,9 +10,9 @@
 #define pwmFreq 50       
 #define pwmResolution 16
 #define centerPulse 4915
-#define maxSpeed200 200
-int delta = 20; //original 820 (max speed) to understand why 20 pls look at the datasheet average rotational velocity graph
+#define maxSpeed 205 // 820 max speed
 
+int delta = 20; //to understand why 20 pls look at the datasheet average rotational velocity graph
 int state = 0;
 
 void move();
@@ -21,7 +21,7 @@ void stop();
 void turn();
 
 void startMovementManager(void * parameter) {
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(1750 / portTICK_PERIOD_MS);
   
     // PWM
     ledcSetup(pwmChannel, pwmFreq, pwmResolution);
@@ -29,7 +29,7 @@ void startMovementManager(void * parameter) {
     ledcSetup(pwmChannel2, pwmFreq, pwmResolution);
     ledcAttachPin(motorPin2, pwmChannel2);
   
-    Serial.println("Start motors");
+    // Serial.println("Start motors");
     handleState();
 }  
 
@@ -52,19 +52,19 @@ void move() {
     ledcWrite(pwmChannel2, centerPulse + delta);
     //clock wise
     ledcWrite(pwmChannel, centerPulse - delta);
-    Serial.println("Forward start");
+    // Serial.println("Forward start");
     
-    if (delta < 200) //max speed for our use case
+    if (delta < maxSpeed)
     {
-        delta += 3;
+        delta += 2;
     }
     vTaskDelay(20); 
 }
 
 void turn(){
-    ledcWrite(pwmChannel, centerPulse + maxSpeed200);
-    ledcWrite(pwmChannel2, centerPulse + maxSpeed200);
-    Serial.println("Forward");
+    ledcWrite(pwmChannel, centerPulse + maxSpeed);
+    ledcWrite(pwmChannel2, centerPulse + maxSpeed);
+    // Serial.println("Forward");
     vTaskDelay(20);
 }
 
@@ -72,7 +72,7 @@ void stop(){
     delta = 20; //to understand why 20 pls look at the datasheet average rotational velocity graph
     ledcWrite(pwmChannel, centerPulse);
     ledcWrite(pwmChannel2, centerPulse);
-    Serial.println("Stop");
+    // Serial.println("Stop");
     vTaskDelay(20);
 }
 

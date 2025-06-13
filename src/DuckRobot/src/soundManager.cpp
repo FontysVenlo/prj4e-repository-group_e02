@@ -29,7 +29,7 @@ void start(void * parameter){
 int playRandomSound(){
     for (;;)
     {
-      int timeToWait = rand() % 20 + 20; //delay between the quacks
+      int timeToWait = rand() % 15 + 10; //delay between the quacks
       delay(timeToWait * 1000);
   
       int r = rand() % 20 + 1;

@@ -1,6 +1,6 @@
 # Electrical Circuit
 
-This document holds the circuit layout with previous versions and used pins documentation.
+This document holds the circuit layout with version history and used microcontroller pins documentation.
 
 - [Current Version](#current-circuit-diagram)
 - [Version history](#version-history)
@@ -9,6 +9,11 @@ This document holds the circuit layout with previous versions and used pins docu
 ## Current Circuit Diagram
 
 **Main features:** microcontroller, speaker, compass, distance sensor are powered by 4S battery pack (6V) through a stepdown converter; Motors are powered with 2S LiPo batteries (7.4V) with implemented AD conversion for voltage tracking from one of the batteries. Both power sources are additionally protected with fuses - 400mA and slow 800mA repectively, - and are controlled with DPDT toggle switch.
+
+Remarks:
+- Only bridge the ground, power rows MUST NOT be bridged
+- Due to the limited functionality of the tool, on diagram ground wires are colored blue, while the real life wires are black
+
 ![Circuit Diagram](/documentation/images/circuit_image_v5.svg)
 *Link to the project: https://app.cirkitdesigner.com/project/20f3ba8c-a90e-4b3a-8cf0-a0710fcb53cf*
 
@@ -49,10 +54,6 @@ Addition of two fuses for both power sources for additional safety measures.
 ## Components and pins:
 Currently free GPIO pins: 26, 0, 4, 25, 36, 39, 35
 
-Remarks:
-- Only bridge the ground, power rows MUST NOT be bridged
-- Due to the limited functionality of the tool, on diagram ground wires are colored blue, while the real life wires are black
-- AD conversion takes pin 34 and requires 47K ohm (ground) and 12K ohm (in between) resistors.
 
 <br>
 
@@ -113,3 +114,5 @@ Red LEDs
 
 <br>
 <br>
+
+**AD conversion** takes pin 34 and requires 47K ohm (ground) and 12K ohm (in between) resistors.

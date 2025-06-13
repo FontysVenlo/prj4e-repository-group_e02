@@ -5,6 +5,7 @@
 #include "adcManager.h"
 
 #define VOLTAGE_LIMIT 3000
+#define DETECTION_ZONE 40
 
 bool lowBatteryMode = false;
 bool obstacleFound = false;
@@ -14,7 +15,6 @@ bool checkLowBattery();
 void lowBatteryMovement(int distance);
 
 void startMovement(void *parameter) {
-
   xTaskCreate(
       startMovementManager, // Function that should be called
       "movementManager",    // Name of the task (for debugging)
@@ -71,15 +71,16 @@ bool checkLowBattery() {
 
 void normalMovement(int distance, int prevDist) {
   // Smooth transition to prevent immediate direction changes
-  if ((prevDist < 30 && distance >= 30) || (prevDist >= 30 && distance < 30))
+  if ((prevDist < DETECTION_ZONE && distance >= DETECTION_ZONE) || (prevDist >= DETECTION_ZONE && distance < DETECTION_ZONE))
   {
     state = 3; //stop
     delay(350);
   }
 
-  if (distance < 30)
+  if (distance < DETECTION_ZONE)
   {
     state = 2; // Turn
+    delay(500);
   }
   else
   {
@@ -88,7 +89,7 @@ void normalMovement(int distance, int prevDist) {
 }
 
 void lowBatteryMovement(int distance) {
-  if (!obstacleFound && distance < 30)
+  if (!obstacleFound && distance < DETECTION_ZONE)
   {
     obstacleFound = true; // Mark obstacle as found
   }
