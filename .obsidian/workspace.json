@@ -11,12 +11,14 @@
             "id": "06420b98347586b4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "documentation/datasheets/speaker-datasheet.pdf"
+                "file": "documentation/great-components-list.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "speaker-datasheet"
+              "icon": "lucide-file",
+              "title": "great-components-list"
             }
           }
         ]
@@ -168,11 +170,20 @@
   },
   "active": "06420b98347586b4",
   "lastOpenFiles": [
-    "documentation/images/circuit_image_v1.svg",
+    "documentation/initial-project-idea.md",
+    "documentation/images/circuit_image_v4.svg",
     "documentation/great-components-list.md",
+    "documentation/circuit.md",
+    "documentation/images/workbreakdown.png",
+    "documentation/images/circuit_image_v3.svg",
+    "documentation/images/circuit_image_v2.svg",
+    "documentation/images/circuit_image_v1.svg",
+    "documentation/images/PRJ_week_2/WhatsApp Video 2025-06-05 at 11.29.39.mp4",
+    "documentation/images/PRJ_week_2/Design_first_waterwheeldraf_2.jpeg",
+    "documentation/images/PRJ_week_2/Cutting_duck.jpeg",
+    "documentation/datasheets/speaker-datasheet.pdf",
     "documentation/README.md",
     "documentation/Project4-charter-02.md",
-    "documentation/datasheets/speaker-datasheet.pdf",
     "documentation/datasheets/motor-datasheets.pdf",
     "documentation/GreatComponentList.md",
     "src/DuckRobot/src/pwmEyesManager.h",
@@ -184,7 +195,6 @@
     "documentation/images/PRJ_week_2/WhatsApp Image 2025-06-05 at 11.30.38.jpeg",
     "documentation/images/PRJ_week_2",
     "documentation/retrospective-results.md",
-    "documentation/datasheets/compass-datasheet.pdf",
     "documentation/images/circuit_imageV2.svg",
     "doc/GreatComponentList.md",
     "doc/Project4-charter-02.md",
