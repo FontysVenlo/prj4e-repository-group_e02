@@ -52,7 +52,7 @@ Addition of two fuses for both power sources for additional safety measures.
 
 
 ## Components and pins:
-Currently free GPIO pins: 26, 0, 4, 25, 36, 39, 35
+Currently free GPIO pins: 26, 4, 25, 36, 39, 35
 
 
 <br>
