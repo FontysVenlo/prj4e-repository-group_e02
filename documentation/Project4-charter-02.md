@@ -84,7 +84,7 @@ By addressing these challenges and delivering a reliable, autonomous system, the
 
 # 2. Business case
 
-There is currently no widely available robotic duck on the market that convincingly mimics the appearance and behavior of a real duck. For pond owners and outdoor enthusiasts who wish to enjoy the presence of the bird without the responsibilities of caring for live animals, this prpject fills out the empty market gap. Robotic duck targets that gap, focusing on developing a lifelike amphibious robotic duck that can autonomously navigate water, respond to environmental changes in realtme, and produce realistic quacking sounds.
+There is currently no widely available robotic duck on the market that convincingly mimics the appearance and behaviour of a real duck. For pond owners and outdoor enthusiasts who wish to enjoy the presence of the bird without the responsibilities of caring for live animals, this project fills out the empty market gap. Robotic duck targets that gap, focusing on developing a lifelike amphibious robotic duck that can autonomously navigate water, respond to environmental changes in realtime, and produce realistic quacking sounds.
 
 Besides its potential as a product with market prospects, this project also serves an important educational purpose. It provides a practical, hands-on opportunity to deepen developers' understanding of embedded systems, including areas such as motor control, sensor integration, wireless communication, and power management.
 
@@ -102,7 +102,7 @@ The must have scope functionality of the duck robot includes:
 - An algorithm that turns the robot when it detects the shore and steers it into a different direction
 - A driving system that lets the duck move straight with the help of a compass.
 - A working speaker that plays different "Quack" sounds
-- It needs to operate on its on for at least an hours
+- It needs to operate on its own for at least an hour
 - A low power mode where the duck does not leave the shore anymore after finding it
 
 The might haves include:

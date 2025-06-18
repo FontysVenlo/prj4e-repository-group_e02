@@ -11,12 +11,14 @@
             "id": "06420b98347586b4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "doc/datasheets/compass-datasheet.pdf"
+                "file": "documentation/great-components-list.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "compass-datasheet"
+              "icon": "lucide-file",
+              "title": "great-components-list"
             }
           }
         ]
@@ -166,19 +168,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a3e6ead287b884b",
+  "active": "06420b98347586b4",
   "lastOpenFiles": [
-    "src/DuckRobot/src/movementManager.h",
-    "src/DuckRobot/src/soundManager.h",
-    "src/DuckRobot/src/movementManager.cpp",
-    "src/DuckRobot/src/movementManager",
-    "src/DuckRobot/src/soundManager.cpp",
-    "src/DuckRobot/src/Sound",
-    "src/DuckRobot/src/main.cpp",
-    "src/DuckRobot/test/README",
-    "src/DuckRobot/test",
-    "src/DuckRobot/lib/README",
-    "src/DuckRobot/lib",
+    "documentation/initial-project-idea.md",
+    "documentation/images/circuit_image_v4.svg",
+    "documentation/great-components-list.md",
+    "documentation/circuit.md",
+    "documentation/images/workbreakdown.png",
+    "documentation/images/circuit_image_v3.svg",
+    "documentation/images/circuit_image_v2.svg",
+    "documentation/images/circuit_image_v1.svg",
+    "documentation/images/PRJ_week_2/WhatsApp Video 2025-06-05 at 11.29.39.mp4",
+    "documentation/images/PRJ_week_2/Design_first_waterwheeldraf_2.jpeg",
+    "documentation/images/PRJ_week_2/Cutting_duck.jpeg",
+    "documentation/datasheets/speaker-datasheet.pdf",
+    "documentation/README.md",
+    "documentation/Project4-charter-02.md",
+    "documentation/datasheets/motor-datasheets.pdf",
+    "documentation/GreatComponentList.md",
+    "src/DuckRobot/src/pwmEyesManager.h",
+    "src/DuckRobot/src/pwmEyesManager.cpp",
+    "documentation/images/PRJ_week_2/description",
+    "documentation/images/PRJ_week_2/WhatsApp Video 2025-06-05 at 11.30.38.mp4",
+    "documentation/images/PRJ_week_2/WhatsApp Video 2025-06-05 at 11.30.38 (2).mp4",
+    "documentation/images/PRJ_week_2/WhatsApp Video 2025-06-05 at 11.30.38 (1).mp4",
+    "documentation/images/PRJ_week_2/WhatsApp Image 2025-06-05 at 11.30.38.jpeg",
+    "documentation/images/PRJ_week_2",
+    "documentation/retrospective-results.md",
+    "documentation/images/circuit_imageV2.svg",
     "doc/GreatComponentList.md",
     "doc/Project4-charter-02.md",
     "doc/initial-project-idea.md",
